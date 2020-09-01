@@ -13,7 +13,7 @@
   ## Installation 
   clone repo in github
   ## Usage 
-  run node index
+  run Node index
   ## License
   MIT
   ## Contributors
@@ -22,6 +22,6 @@
   run test
   ## Questions
   Contact me:
-  Github:[rogerlamotheJR](https://github.com/RogerLamotheJR)
-  Email:[roger.lamothe.jr](https://github.com/RogerLamotheJR)
+  Github:[RogerLamotheJR](https://github.com/RogerLamotheJR)
+  Email:[Roger.Lamothe.Jr@gmail.com](https://github.com/RogerLamotheJR)
   
