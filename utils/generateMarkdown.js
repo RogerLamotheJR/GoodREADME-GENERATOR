@@ -28,5 +28,5 @@ function generateMarkdown(data) {
   Email:[${data.Email}](https://github.com/RogerLamotheJR)
   `;}
   
- exports = generateMarkdown
+ module.exports = generateMarkdown
   

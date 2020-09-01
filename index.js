@@ -71,7 +71,7 @@ const questions = [
 
   //Write to a file
   function writeToFile(data){
-    fs.writeFile(README.md, data, (err) => {
+    fs.writeFileSync(data, (err) => {
       if (err) {return console.log(err);}
       console.log("writen to the file");
     });
@@ -80,10 +80,10 @@ const questions = [
 function init() {
     inquirer.prompt(questions)
     .then(answers => {
-        let response = generateMarkdown(answers);
+        const response = generateMarkdown(answers);
         console.log(answers);
        
-        writeToFile('./utils/README.md', response);
+        writeToFile('README.md');
       
     })
     .catch(err => {
