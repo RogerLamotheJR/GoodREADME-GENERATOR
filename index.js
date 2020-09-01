@@ -2,6 +2,8 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 
+
+
 //array of questions for user
 const questions = [
     {
@@ -68,21 +70,27 @@ const questions = [
     ];
 
   //Write to a file
-  function writeToFile (data){
-    fs.writeFile(data, (err) => {
+  function writeToFile(data){
+    fs.writeFile(README.md, data, (err) => {
       if (err) {return console.log(err);}
+      console.log("writen to the file");
     });
   }
   // function to initialize program
 function init() {
-    inquirer.prompt(questions).then(answers => {
-        
-        const response = generateMarkdown(answers);
+    inquirer.prompt(questions)
+    .then(answers => {
+        let response = generateMarkdown(answers);
         console.log(answers);
        
-        writeToFile("./README.md", response);
+        writeToFile('./utils/README.md', response);
       
     })
+    .catch(err => {
+      console.log(err);
+    })
+
+  
 }
 
 init();

@@ -1,4 +1,4 @@
-// function to generate markdown for README
+// function to generate markdown for README.md
 function generateMarkdown(data) {
     return `
   # ${data.Title}
@@ -28,5 +28,5 @@ function generateMarkdown(data) {
   Email:[${data.Email}](https://github.com/RogerLamotheJR)
   `;}
   
-  module.exports = generateMarkdown
+ exports = generateMarkdown
   

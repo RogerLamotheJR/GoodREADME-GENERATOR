@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RogerLamotheJR/GoodREADME-Generator#readme",
   "dependencies": {
+    "es6": "0.0.7",
     "fs": "0.0.1-security",
     "inquirer": "^7.3.3",
     "path": "^0.12.7",
