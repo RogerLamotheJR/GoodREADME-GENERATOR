@@ -8,23 +8,23 @@ const fs = require('fs');
 const questions = [
     {
       type: 'input',
-      name: 'title',
+      name: 'Title',
       message: "What's is the title"
     },
     {
       type: 'input',
-      name: 'description',
+      name: 'Description',
       message: "What's your description"
       },
   
       {
         type: 'input',
-        name: 'installation',
+        name: 'Installation',
         message: "What's is the installation",
       },
       {
         type: 'input',
-        name: 'usage',
+        name: 'Usage',
         message: "What's your useage",
         },
         {
@@ -51,7 +51,7 @@ const questions = [
       },
         {
             type: 'input',
-            name: 'username',
+            name: 'Username',
             message: "What's your username",
             default: function() {
               return 'Doe';
@@ -59,7 +59,7 @@ const questions = [
         },
         {
               type: 'inpute',
-              name: 'email',
+              name: 'Email',
               message: "What's your email",
               default: function() {
                 return 'Doe';
@@ -71,7 +71,7 @@ const questions = [
 
   //Write to a file
   function writeToFile(data){
-    fs.writeFileSync(data, (err) => {
+    fs.writeFile("sampleREADME.md", data, (err) => {
       if (err) {return console.log(err);}
       console.log("writen to the file");
     });
@@ -83,7 +83,7 @@ function init() {
         const response = generateMarkdown(answers);
         console.log(answers);
        
-        writeToFile('README.md');
+        writeToFile(response);
       
     })
     .catch(err => {

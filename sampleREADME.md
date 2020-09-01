@@ -1,8 +1,5 @@
-# README.md
 
-![app](https://media.giphy.com/media/IhOO7WoNKdwDQoQsLj/giphy.gif)
-
-
+  # README.md
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
@@ -16,7 +13,7 @@
   ## Installation 
   clone repo in github
   ## Usage 
-  run Node index
+  run node index
   ## License
   MIT
   ## Contributors
@@ -25,6 +22,6 @@
   run test
   ## Questions
   Contact me:
-  Github:[RogerLamotheJR](https://github.com/RogerLamotheJR)
-  Email:[Roger.Lamothe.Jr@gmail.com](https://github.com/RogerLamotheJR)
+  Github:[rogerlamotheJR](https://github.com/RogerLamotheJR)
+  Email:[roger.lamothe.jr](https://github.com/RogerLamotheJR)
   
